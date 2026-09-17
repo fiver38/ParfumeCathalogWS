@@ -1,0 +1,11 @@
+{
+  "title": "Avalea Parfum",
+  "description": "Creates professional perfume catalogs with brand customization for sales, enabling businesses to showcase products in polished, ready-to-use PDF formats.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

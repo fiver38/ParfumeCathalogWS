@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .catalog-page {
+    page-break-after: always;
+    break-after: page;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .catalog-page:last-child {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+.font-display {
+  font-family: 'Cormorant Infant', serif;
+}
+
+.font-body {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Butterfly decorations */
+.butterfly {
+  position: absolute;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Scrollbar hide */
+.catalog-scroll::-webkit-scrollbar {
+  display: none;
+}
+.catalog-scroll {
+  scrollbar-width: none;
+}
